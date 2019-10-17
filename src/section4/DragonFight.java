@@ -52,7 +52,8 @@ JOptionPane.showInputDialog("You Lost game over");
 			// 14. Else if the dragon's health is less than or equal to 0
 if(DH<=0);
 	JOptionPane.showInputDialog("You Won!");
-	JOptionPane.showInputDialog("the dragonis dead and you took all the gold. "
+	JOptionPane.showInputDialog(
+			"the dragonis dead and you took all the gold. "
 			+ "You are now the dragon slayer, king of dragons. "
 			+ "all dragons bow before you");
 			// 15. Else
@@ -60,7 +61,7 @@ if(DH<=0);
 			// -- Pop up a message that tells the their current health and the dragon's
 			// currently health (Bonus: Also display the amount of health that was lost for
 			// each player this round)
-
+JOptionPane.showMessageDialog(null,PH + "    " + DH);
 		}
 	}
 }
