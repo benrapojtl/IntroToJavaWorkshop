@@ -7,6 +7,7 @@ size( 700, 500);
    catPic = loadImage("index.jpeg");
  catPic.resize(700, 500);
 background(catPic);
+noStroke();
 }
 void draw(){
          if(mousePressed){
@@ -18,6 +19,6 @@ ellipse(x + 193, y, 70, 60);
 void keyPressed(){
  x+=2 /4*acceleration;
  y+=2 /4*acceleration;
-  x++;
-y++;
+  x+=10;
+y+=10;
 }
